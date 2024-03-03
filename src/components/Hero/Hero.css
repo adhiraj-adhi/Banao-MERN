@@ -1,0 +1,87 @@
+.hero {
+    width: 100%;
+    height: 25rem;
+    position: relative;
+}
+
+.coverEffect {
+    width: 100%;
+    height: 25rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(56, 56, 56, 0.338);
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heroContent {
+    position: absolute;
+    left: 10rem;
+    bottom: 5rem;
+    color: #ffffff;
+}
+
+.heroContent p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 0.2rem;
+}
+
+/* media queries: */
+
+@media screen and (max-width: 850px) {
+    .hero {
+        height: 22rem;
+    }
+    .coverEffect{
+        height: 22rem;
+    }
+    .heroContent{
+        left: 5rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    /* .hero {
+        height: 22rem;
+    }
+    .coverEffect{
+        height: 22rem;
+    } */
+    .heroContent{
+        left: 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .hero {
+        height: 18rem;
+    }
+    .coverEffect{
+        height: 18rem;
+    }
+    .heroContent{
+        left: 2rem;
+        bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hero {
+        height: 15rem;
+    }
+    .coverEffect{
+        height: 15rem;
+    }
+    .heroContent{
+        font-size: 0.7rem;
+    }
+    .heroContent p{
+        font-size: 0.7rem;
+    }
+}

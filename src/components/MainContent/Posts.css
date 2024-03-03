@@ -1,0 +1,123 @@
+.post{
+    /* background-color: yellow; */
+    /* box-shadow: 0px 2px 2px #000000ab; */
+    box-shadow: 0px 2px 2px #636363ab;
+    margin-bottom: 1rem;
+}
+
+.postImage img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.contentType{
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+.postAbout{
+    padding: 1rem;
+}
+
+.postHeading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.postHeading h2{
+    width: 80%;
+    font-size: 0.925rem;
+    color: #000000;
+    margin-bottom: 0.25rem;
+}
+
+.postContent{
+    color: #5C5C5C;
+    font-size: 0.75rem;
+    margin-bottom: 0.35rem;
+}
+
+.companyAndLocation, .dateAndLocation{
+    font-size: 0.68rem;
+    display: flex;
+    /* align-items: center; */
+    font-weight: 500;
+}
+
+.companyAndLocation .companyName, .dateAndLocation .date{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.companyAndLocation .workLocation, .dateAndLocation .location{
+    display: flex;
+    align-items: center;
+}
+.redirectorBtn{
+    width: 100%;
+    outline: none;
+    border: 1px solid #A9AEB8;
+    background-color: #ffffff;
+    color: #02B875;
+    border-radius: 10px;
+    padding: 0.4rem 0;
+    margin-top: 0.7rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+/* Post Author Section Designing: */
+.postAuthor{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.postAuthor .authorDetails{
+    display: flex;
+    align-items: center;
+}
+
+.postAuthor .authorDetails img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.postAuthor .authorDetails .authorName{
+    margin-left: 0.5rem;
+    color: #000000;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.postAuthor .viewsAndShare{
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+.viewsAndShare p{
+    display: flex;
+    align-items: center;
+}
+
+.sharePost{
+    margin-left: 1.25rem;
+    outline: none;
+    border: none;
+    background-color: #EDEEF0; 
+    color: #2D2D2D;
+    padding: 0.3rem 0.45rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}

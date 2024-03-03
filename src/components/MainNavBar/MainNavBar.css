@@ -1,0 +1,125 @@
+.mainNavBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1.5px solid #E0E0E0;
+    padding: 2rem 10rem;
+    padding-bottom: 0.65rem;
+}
+
+.navLeft ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navLeft ul li a{
+    font-size: 0.8rem;
+    color: #8A8A8A;
+    margin-right: 0.8rem;
+}
+
+.mainNavBar ul li .active{
+    color: #000000;
+}
+
+.navRight{
+    display: flex;
+}
+
+.navRight button{
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navRight .createPost{
+    background-color: #EDEEF0;
+    color: #000000;
+    padding: 0.3rem;
+    margin-right: 0.6rem;
+}
+
+
+.navRight .joinGroup{
+    background-color: #2F6CE5;
+    color: #ffffff;
+    padding: 0.3rem;
+}
+
+
+.navRight .joinGroup img{
+    height: 16.5px;
+    margin-right: 3px;
+}
+
+.navRight .exitGroup{
+    border: 1px solid #989899;
+    color: #6A6A6B;
+    background-color: transparent;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+.phoneMainNavBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1.5px solid #E0E0E0;
+    padding: 2rem 2rem;
+    padding-bottom: 0.65rem;
+    display: none;
+}
+
+.phoneMainNavBar p{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.phoneMainNavBar div{
+    display: flex;
+    align-items: center;
+    background-color: #E0E0E0;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+
+/* media queries: */
+
+@media screen and (max-width: 850px) {
+    .mainNavBar{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .mainNavBar{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .mainNavBar{
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .mainNavBar{
+        display: none;
+    }
+    .phoneMainNavBar{
+        display: flex;
+    }
+}

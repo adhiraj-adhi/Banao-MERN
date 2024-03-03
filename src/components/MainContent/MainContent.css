@@ -1,0 +1,136 @@
+.mainContent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+    padding: 2rem 10rem
+}
+
+.mainContentLeft {
+    width: 65%;
+}
+
+.mainContentRight {
+    width: 28%;
+}
+
+.mainContentRight .location {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.325rem;
+    border-bottom: 1px solid #B8B8B8;
+}
+
+.mainContentRight .location .address {
+    display: flex;
+    align-items: center;
+}
+
+.mainContentRight .location .address p {
+    font-size: 0.85rem;
+    margin-left: 0.3rem;
+    color: #000000;
+}
+
+.mainContentRight .location .editlocation {
+    cursor: pointer;
+}
+
+.mainContentRight .warn {
+    margin-top: 1.25rem;
+    font-size: 0.6rem;
+    color: #8A8A8A;
+}
+
+.mainContentRight .recommendation {
+    margin-top: 1.5rem;
+    color: #000000;
+}
+
+.mainContentRight .recommendation h3 {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.recommendation .groups {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.recommendation .groups img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.recommendation .groups .groupName {
+    margin-left: 0.5rem;
+}
+
+.recommendation .groups button {
+    outline: none;
+    border: none;
+    font-size: 0.75rem;
+    border-radius: 14px;
+    padding: 0.4rem 0.62rem;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.recommendation .groups .unfollowBtn {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.recommendation .seeMore {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+
+
+/* media queries: */
+
+@media screen and (max-width: 850px) {
+    .mainContent {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .mainContent {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .mainContent {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .mainContentLeft {
+        width: 75%;
+    }
+
+    .mainContentRight {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .mainContent {
+        padding: 2rem 0rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .mainContentLeft {
+        width: 100%;
+    }
+}
