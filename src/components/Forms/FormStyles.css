@@ -148,20 +148,18 @@
 
 @media screen and (max-width: 550px) {
     .formContainer {
-        width: 100%;
-        position: fixed;
-        position: fixed;
-        bottom: -125%;
-        left: 0;
-        transform: translate(0, -125%);
-        /* bottom: -150%;
-        left: 0;
-        transform: translate(0, -150%); */
-        /* bottom: -50%;
-        left: 0;
-        transform: translate(0, -50%); */
-        z-index: 10;
-        height: 200px;
+        top: unset;
+        /* Important Learning */
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        /* transform: translate(-50%, -75%); */
+    }
+
+    .registerForm,
+    .loginForm {
+        border-radius: 0px;
     }
 
     .registerFormContainer,
@@ -175,6 +173,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .loginFormLeft form{
+        width: 80%;
     }
 
     .registerFormRight,
@@ -197,7 +199,8 @@
         display: none;
     }
 
-    .registerFormRight img, .loginForm img {
+    .registerFormRight img,
+    .loginFormRight img {
         display: none;
     }
 
